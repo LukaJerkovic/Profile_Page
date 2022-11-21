@@ -8,7 +8,7 @@
 }
 
 body {
-    overflow: hidden;    
+    overflow: hidden;
 }
 
 
@@ -20,13 +20,14 @@ body {
     background-repeat: no-repeat;
     height: 100vh;
 }
+
 /* <a href="https://www.freepik.com/free-vector/binary-code-pattern-gray-background_16406684.htm#query=coding%20background&position=17&from_view=search&track=sph">Image by rawpixel.com</a>on Freepik */
 
 .container-about {
     width: 100%;
     min-height: 100vh;
     background-color: #f3f5f8;
-    background-image: url('./assets/shutterstock_1038395047-1024x576.jpg');
+    background-image: url('./assets/MainPage.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -36,7 +37,7 @@ body {
     width: 100%;
     min-height: 100vh;
     background-color: #f3f5f8;
-    background-image: url('./assets/rm373batch9-033.jpg');
+    background-image: url('./assets/MainPage.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -49,12 +50,13 @@ body {
     color: #778899;
     letter-spacing: 3px;
     cursor: pointer;
-    text-transform: uppercase;    
+    text-transform: uppercase;
 }
 
 .logo span {
     font-size: 40px;
-    color: #FF4500
+    color: #FF4500;
+    animation: animate 3s linear infinite;
 }
 
 nav {
@@ -83,7 +85,8 @@ nav {
     text-transform: capitalize;
 }
 
-.navItems li:hover a, .links a:hover {
+.navItems li:hover a,
+.links a:hover {
     color: #FF4500
 }
 
@@ -94,29 +97,38 @@ nav {
 }
 
 .wrapper {
-   display: flex;
-   width: 100%;
-   height: calc(100vh - 80px);
-   justify-content: center;
-   align-items: center;
-   padding: 0 10%;
-   overflow: hidden; 
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 80px);
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    overflow: hidden;
 }
 
 .wrapper-about {
-   font-size: 35px; 
-   text-align: left;
-   align-items: center;
-   padding-left: 50px;
+    font-size: 35px;
+    text-align: left;
+    align-items: center;
+    padding-left: 200px;
+    padding-top: 25px;
 }
 
 .wrapper-about p {
-    width: 900px;
-    float: right;
+    width: 1500px;
+    font-size: 35px;
+    line-height: 2.0;
 }
 
-.wrapper-about .capital-letter {
+.wrapper-about .capital-letter-left {
     font-size: 50px;
+    color: #FF4500;
+}
+
+.wrapper-about .capital-letter-right {
+    font-size: 50px;
+    color: #FF4500;
+    text-align: right;
 }
 
 
@@ -139,6 +151,7 @@ nav {
     width: 45px;
     bottom: 10px;
     background-color: #FF4500;
+    animation: animate 1.5s linear infinite;
 }
 
 h1 {
@@ -164,7 +177,11 @@ h1 p {
 p {
     display: block;
     width: 90%;
+<<<<<<< HEAD
     font-size: 1.0em;
+=======
+    font-size: 25px;
+>>>>>>> 68eb900 (pages)
     color: #778899;
 }
 
@@ -217,13 +234,13 @@ button:hover {
 }
 
 .skills {
-    width: 100%;    
+    width: 100%;
     max-width: 600px;
     padding: 0 20px;
 }
 
 .skill-name {
-    font-size: 45px;
+    font-size: 35px;
     font-weight: 700;
     color: #778899;
     text-transform: uppercase;
@@ -256,11 +273,59 @@ button:hover {
     transform: translateX(50%);
 }
 
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #778899;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #FF4500;;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #778899;
+    padding: 0 200px 200px 200px;
+}
+
+
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1.0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
 
 @keyframes fillBars {
     from {
         width: 0;
     }
+
     to {
         width: 100%;
     }
