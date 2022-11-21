@@ -15,14 +15,7 @@ body {
 .container {
     width: 100%;
     min-height: 100vh;
-    background-color: #f3f5f8;
-}
-
-.container-style {
-    width: 100%;
-    min-height: 100vh;
-    background-color: #f3f5f8;
-    background-image: url('./assets/rm373batch9-033.jpg');
+    background-image: url('./assets/MainPage.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -34,6 +27,16 @@ body {
     min-height: 100vh;
     background-color: #f3f5f8;
     background-image: url('./assets/shutterstock_1038395047-1024x576.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.container-skills {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f3f5f8;
+    background-image: url('./assets/rm373batch9-033.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
