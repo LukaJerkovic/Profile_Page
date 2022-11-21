@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', 'Open Sans', sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f3f5f8;
+}
+
+.logo {
+    display: flex;
+    font-size: 40px;
+    font-weight: 800;
+    color: #778899;
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: uppercase;    
+}
+
+.logo span {
+    font-size: 40px;
+    color: #FF4500
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 80px;
+    line-height: 80px;
+    z-index: 111;
+}
+
+.navItems {
+    display: flex;
+}
+
+.navItems li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.navItems li a {
+    font-size: 25px;
+    color: #778899;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.navItems li:hover a, .links a:hover {
+    color: #FF4500
+}
+
+.links a {
+    font-size: 30px;
+    color: #778899;
+    margin: 25px 10px;
+}
+
+.wrapper {
+   display: flex;
+   width: 100%;
+   height: calc(100vh - 80px);
+   justify-content: center;
+   align-items: center;
+   padding: 0 10%;
+   overflow: hidden; 
+}
+
+.wrapper-about {
+   font-size: 35px; 
+   text-align: left;
+   align-items: center;
+   padding-left: 50px;
+}
+
+.wrapper-about .capital-letter {
+    font-size: 50px;
+}
+
+
+.cols {
+    width: 50%;
+}
+
+.topline {
+    display: block;
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 5px;
+    color: #778899;
+}
+
+.topline::after {
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 45px;
+    bottom: 10px;
+    background-color: #FF4500;
+}
+
+h1 {
+    display: block;
+    font-size: 7em;
+    font-weight: 900;
+    color: #778899;
+}
+
+h1 span {
+    color: #FF4500;
+}
+
+h1 p {
+    font-size: 65px;
+}
+
+.multiText {
+    color: #FF4500;
+    text-transform: capitalize;
+}
+
+p {
+    display: block;
+    width: 90%;
+    font-size: 1.2em;
+    color: #778899;
+}
+
+p span {
+    color: #FF4500;
+}
+
+.btns {
+    width: 100%;
+    position: relative;
+    left: 150px;
+}
+
+button {
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 400;
+    color: #fff;
+    background-color: #778899;
+    padding: 8px 14px;
+    margin: 40px 5px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4);
+}
+
+button:hover {
+    background-color: #FF4500;
+}
+
+.imgbox {
+    position: relative;
+    width: 60%;
+    height: 60%;
+}
+
+.imgbox img {
+    position: relative;
+    height: 100%;
+    width: calc(130% - 80px);
+    top: -100px;
+    left: 200px;
+}
+
+.wrapper-skills {
+    padding-left: 60px;
+}
+
+.skills {
+    width: 100%;    
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+.skill-name {
+    font-size: 45px;
+    font-weight: 700;
+    color: #778899;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.skill-bar {
+    height: 20px;
+    width: 60%;
+    background: #778899;
+    border-radius: 10px;
+}
+
+.skill-per {
+    height: 20px;
+    background: #FF4500;
+    border-radius: 10px;
+    position: relative;
+    animation: fillBars 2.5s 1;
+}
+
+.skill-per::before {
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background: #778899;
+    border-radius: 4px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+}
+
+
+@keyframes fillBars {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
