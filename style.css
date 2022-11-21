@@ -9,6 +9,7 @@
 
 body {
     overflow: hidden;
+    width: 100%;
 }
 
 
@@ -45,7 +46,7 @@ body {
 
 .logo {
     display: flex;
-    font-size: 40px;
+    font-size: 2vw;
     font-weight: 800;
     color: #778899;
     letter-spacing: 3px;
@@ -54,7 +55,7 @@ body {
 }
 
 .logo span {
-    font-size: 40px;
+    font-size: 2vw;
     color: #FF4500;
     animation: animate 3s linear infinite;
 }
@@ -78,7 +79,7 @@ nav {
 }
 
 .navItems li a {
-    font-size: 25px;
+    font-size: 1vw;
     color: #778899;
     letter-spacing: 3px;
     text-decoration: none;
@@ -91,7 +92,7 @@ nav {
 }
 
 .links a {
-    font-size: 30px;
+    font-size: 1.5vw;
     color: #778899;
     margin: 25px 10px;
 }
@@ -107,7 +108,7 @@ nav {
 }
 
 .wrapper-about {
-    font-size: 35px;
+    font-size: 2.5vw;
     text-align: left;
     align-items: center;
     padding-left: 200px;
@@ -115,18 +116,18 @@ nav {
 }
 
 .wrapper-about p {
-    width: 1500px;
-    font-size: 35px;
+    width: 80vw;
+    font-size: 2vw;
     line-height: 2.0;
 }
 
 .wrapper-about .capital-letter-left {
-    font-size: 50px;
+    font-size: 3.5vw;
     color: #FF4500;
 }
 
 .wrapper-about .capital-letter-right {
-    font-size: 50px;
+    font-size: 3.5vw;
     color: #FF4500;
     text-align: right;
 }
@@ -139,7 +140,7 @@ nav {
 .topline {
     display: block;
     position: relative;
-    font-size: 35px;
+    font-size: 2.5vw;
     letter-spacing: 5px;
     color: #778899;
 }
@@ -166,7 +167,7 @@ h1 span {
 }
 
 h1 p {
-    font-size: 65px;
+    font-size: 4.5vw;
 }
 
 .multiText {
@@ -196,7 +197,7 @@ button {
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    font-size: 25px;
+    font-size: 1.5vw;
     font-weight: 400;
     color: #fff;
     background-color: #778899;
@@ -236,7 +237,7 @@ button:hover {
 }
 
 .skill-name {
-    font-size: 35px;
+    font-size: 2.0vw;
     font-weight: 700;
     color: #778899;
     text-transform: uppercase;
@@ -244,14 +245,14 @@ button:hover {
 }
 
 .skill-bar {
-    height: 20px;
+    height: 1vw;
     width: 60%;
     background: #778899;
     border-radius: 10px;
 }
 
 .skill-per {
-    height: 20px;
+    height: 1vw;
     background: #FF4500;
     border-radius: 10px;
     position: relative;
@@ -298,6 +299,8 @@ input[type=submit]:hover {
     background-color: #778899;
     padding: 0 200px 200px 200px;
 }
+
+
 
 
 
