@@ -8,13 +8,35 @@
 }
 
 body {
-    overflow: hidden;
+    overflow: hidden;    
 }
+
 
 .container {
     width: 100%;
     min-height: 100vh;
     background-color: #f3f5f8;
+}
+
+.container-style {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f3f5f8;
+    background-image: url('./assets/rm373batch9-033.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+/* <a href="https://www.freepik.com/free-vector/binary-code-pattern-gray-background_16406684.htm#query=coding%20background&position=17&from_view=search&track=sph">Image by rawpixel.com</a>on Freepik */
+
+.container-about {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f3f5f8;
+    background-image: url('./assets/shutterstock_1038395047-1024x576.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
 .logo {
@@ -83,6 +105,11 @@ nav {
    text-align: left;
    align-items: center;
    padding-left: 50px;
+}
+
+.wrapper-about p {
+    width: 900px;
+    float: right;
 }
 
 .wrapper-about .capital-letter {
